@@ -1,19 +1,11 @@
-import { AppSidebar } from "@/components/layout/app-sidebar";
+import type { ReactNode } from "react";
 
-export default function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="flex min-h-screen">
-      <AppSidebar />
+import { AppShell } from "@/components/layout/app-shell";
 
-      <div className="flex-1">
-        <header className="border-b p-4">Navbar</header>
+type DashboardLayoutProps = {
+  children: ReactNode;
+};
 
-        <main className="p-6">{children}</main>
-      </div>
-    </div>
-  );
+export default function DashboardLayout({ children }: DashboardLayoutProps) {
+  return <AppShell>{children}</AppShell>;
 }
