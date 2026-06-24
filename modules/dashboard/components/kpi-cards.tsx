@@ -8,15 +8,13 @@ export function KpiCards() {
       {dashboardStats.map((stat) => (
         <Card key={stat.title}>
           <CardHeader>
-            <CardTitle className="text-sm text-muted-foreground">
-              {stat.title}
-            </CardTitle>
+            <CardTitle className="text-sm">{stat.title}</CardTitle>
           </CardHeader>
 
           <CardContent>
-            <div className="text-2xl font-bold">{stat.value}</div>
+            <p className="text-2xl font-bold">{stat.value}</p>
 
-            <p className="mt-1 text-sm text-muted-foreground">{stat.change}</p>
+            <p className="text-sm text-muted-foreground">{stat.change}</p>
           </CardContent>
         </Card>
       ))}
