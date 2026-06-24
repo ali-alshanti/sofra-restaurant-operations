@@ -2,6 +2,7 @@ import { KpiCards } from "@/modules/dashboard/components/kpi-cards";
 import { RevenueChart } from "@/modules/dashboard/components/revenue-chart";
 import { ActivityFeed } from "@/modules/dashboard/components/activity-feed";
 import { TopDishes } from "@/modules/dashboard/components/top-dishes";
+import { BranchPerformance } from "@/modules/dashboard/components/branch-performance";
 
 export default function DashboardPage() {
   return (
@@ -15,6 +16,7 @@ export default function DashboardPage() {
 
         <ActivityFeed />
         <TopDishes />
+        <BranchPerformance />
       </div>
     </div>
   );
