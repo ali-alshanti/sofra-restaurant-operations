@@ -1,3 +1,3 @@
 export default function BranchesPage() {
-  return <div className="p-6">Branches</div>;
+  return <div>Branches Module</div>;
 }
