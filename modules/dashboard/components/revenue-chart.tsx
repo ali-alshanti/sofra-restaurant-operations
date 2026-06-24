@@ -21,7 +21,7 @@ export function RevenueChart() {
       </CardHeader>
 
       <CardContent>
-        <div className="h-[350px]">
+        <div className="h-87.5">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={revenueData}>
               <XAxis dataKey="month" />
