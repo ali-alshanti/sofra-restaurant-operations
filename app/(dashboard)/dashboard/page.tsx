@@ -7,9 +7,13 @@ export default function DashboardPage() {
     <div className="space-y-6">
       <KpiCards />
 
-      <RevenueChart />
+      <div className="grid gap-6 lg:grid-cols-3">
+        <div className="lg:col-span-2">
+          <RevenueChart />
+        </div>
 
-      <ActivityFeed />
+        <ActivityFeed />
+      </div>
     </div>
   );
 }

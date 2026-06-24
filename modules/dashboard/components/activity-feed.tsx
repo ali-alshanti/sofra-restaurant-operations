@@ -12,10 +12,16 @@ export function ActivityFeed() {
       <CardContent>
         <div className="space-y-4">
           {activities.map((activity) => (
-            <div key={activity.id} className="border-b pb-3 last:border-b-0">
-              <p className="font-medium">{activity.message}</p>
+            <div key={activity.id} className="border-b pb-4 last:border-b-0">
+              <h4 className="font-medium">{activity.title}</h4>
 
-              <p className="text-sm text-muted-foreground">{activity.time}</p>
+              <p className="text-sm text-muted-foreground">
+                {activity.description}
+              </p>
+
+              <span className="text-xs text-muted-foreground">
+                {activity.time}
+              </span>
             </div>
           ))}
         </div>

@@ -1,22 +1,26 @@
 export const activities = [
   {
     id: 1,
-    message: "Ahmed created a reservation",
+    title: "New reservation created",
+    description: "Table 12 reserved for 4 guests",
     time: "5 min ago",
   },
   {
     id: 2,
-    message: "Order #102 completed",
+    title: "Order completed",
+    description: "Order #102 has been served",
     time: "15 min ago",
   },
   {
     id: 3,
-    message: "Inventory alert: Tomatoes running low",
+    title: "Inventory alert",
+    description: "Tomatoes stock is running low",
     time: "30 min ago",
   },
   {
     id: 4,
-    message: "New branch performance report generated",
+    title: "Branch report generated",
+    description: "Weekly performance report ready",
     time: "1 hour ago",
   },
 ];
